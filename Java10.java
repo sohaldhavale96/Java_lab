@@ -27,7 +27,7 @@ class Saving_Account{
         return getSavingBalance()+CalculateMonthlyIntrestRate();
     }
     public final static void ModifyIntrest(double NewRate){
-        annualIntrestRate = NewRate;
+        annualIntrestRate = NewRate/100d;
     }
     public final double getannualIntrestRate(){
         return annualIntrestRate;
